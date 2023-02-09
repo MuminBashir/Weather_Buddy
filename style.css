@@ -1,0 +1,129 @@
+.contain {
+    background: url("bg.jpg") no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.weathercard{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 30rem;
+}
+
+.weatherimg{
+    /* width: 0.1rem !important; */
+    height: 10rem !important;
+}
+
+.tempbox{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+#temp{
+    font-size: 3.8rem;
+}
+
+.extrainfo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.error{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#city{
+    outline: none !important;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .weathercard {
+        width: 24rem !important;
+    }
+
+    .extrainfo{
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .weathercard {
+        width: 20rem !important;
+    }
+
+    .tempbox{
+        font-size: 1rem;
+    }
+
+    #temp{
+        font-size: 2.8rem;
+    }
+
+    .extrainfo{
+        font-size: 0.65rem;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .weathercard {
+        width: 18rem !important;
+    }
+
+    .tempbox{
+        font-size: 0.9rem;
+    }
+
+    #temp{
+        font-size: 2.2rem;
+    }
+
+    .extrainfo{
+        font-size: 0.55rem;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .weathercard {
+        width: 15rem !important;
+    }
+
+    .tempbox{
+        font-size: 0.65rem;
+    }
+
+    #temp{
+        font-size: 1.9rem;
+    }
+
+    .extrainfo{
+        font-size: 0.36rem;
+    }
+
+    .weatherimg{
+        height: 7rem !important;
+    }
+
+}
